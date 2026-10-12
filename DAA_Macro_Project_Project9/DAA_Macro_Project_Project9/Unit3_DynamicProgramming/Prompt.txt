@@ -1,0 +1,11 @@
+Draw a DP table for 0/1 Knapsack with 4 items and capacity 10.
+
+Use the following input:
+Item 1: Weight = 2, Profit = 3
+Item 2: Weight = 3, Profit = 4
+Item 3: Weight = 4, Profit = 5
+Item 4: Weight = 5, Profit = 6
+
+Show the item numbers on the rows and capacities 0 to 10 on the columns.
+Display the computed DP values clearly and highlight the final maximum profit cell.
+The visualization should be clean, simple, academic, and suitable for a DAA project.

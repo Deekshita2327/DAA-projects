@@ -1,0 +1,25 @@
+ALGORITHM: 0/1 KNAPSACK USING DYNAMIC PROGRAMMING
+
+Input:
+    n items
+    weight[i] and profit[i] for each item
+    knapsack capacity W
+
+Output:
+    Maximum obtainable profit
+    Selected items
+
+1. Create a DP table dp[n+1][W+1].
+2. Initialize row 0 and capacity 0 to 0.
+3. For each item i from 1 to n:
+       For each capacity w from 0 to W:
+           If weight[i-1] <= w:
+               dp[i][w] = max(
+                   profit[i-1] + dp[i-1][w-weight[i-1]],
+                   dp[i-1][w]
+               )
+           Else:
+               dp[i][w] = dp[i-1][w]
+4. The maximum profit is dp[n][W].
+5. Trace the table backwards to identify selected items.
+6. Stop when all selected items are identified.

@@ -1,0 +1,5 @@
+Visualize the state space tree for the N-Queens problem with N=4 using backtracking.
+Show the root and row-by-row queen placements. Mark invalid/rejected branches in red,
+show the explored solution path in green, and clearly indicate where backtracking occurs.
+Label nodes using row and column positions such as R1:C2. Highlight one complete solution.
+Create a clean academic DAA visualization suitable for a project report and presentation.

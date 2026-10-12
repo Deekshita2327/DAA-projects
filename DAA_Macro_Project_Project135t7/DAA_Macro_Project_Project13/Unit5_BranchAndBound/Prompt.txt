@@ -1,0 +1,20 @@
+Illustrate bounding and pruning in a 0/1 Knapsack Branch-and-Bound search tree.
+
+Use the following input:
+Item 1: Weight = 2, Profit = 3
+Item 2: Weight = 3, Profit = 4
+Item 3: Weight = 4, Profit = 5
+Item 4: Weight = 5, Profit = 6
+Knapsack capacity = 10
+
+Sort items by profit/weight ratio before calculating bounds.
+Draw the root and the include/exclude branches for each item.
+For every node, display:
+- selected/partial decision path
+- total weight
+- current profit
+- upper bound
+
+Mark branches as PRUNED when the weight exceeds capacity or the bound is less than or equal to the current best profit.
+Highlight the final optimal solution with maximum profit 13 and total weight 10.
+Keep the diagram clean, simple, academic, and suitable for a DAA macro project.

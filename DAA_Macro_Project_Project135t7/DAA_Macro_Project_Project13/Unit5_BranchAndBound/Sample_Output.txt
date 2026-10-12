@@ -1,0 +1,35 @@
+SAMPLE OUTPUT
+
+0/1 Knapsack using Branch and Bound
+====================================
+Capacity: 10
+
+Items (sorted by Profit/Weight ratio):
+Item 1 -> Weight=2, Profit=3, Ratio=1.50
+Item 2 -> Weight=3, Profit=4, Ratio=1.33
+Item 3 -> Weight=4, Profit=5, Ratio=1.25
+Item 4 -> Weight=5, Profit=6, Ratio=1.20
+
+Branch-and-Bound Tree
+---------------------
+ROOT | Level=0 Weight=0 Profit=0 Bound=13.20
+├── Include Item 1 | Level=1 Weight=2 Profit=3 Bound=13.20
+│   ├── Include Item 2 | Level=2 Weight=5 Profit=7 Bound=13.20
+│   │   ├── Include Item 3 | Level=3 Weight=9 Profit=12 Bound=13.20
+│   │   │   ├── Include Item 4 | Level=4 Weight=14 Profit=18 Bound=18.00 [PRUNED]
+│   │   │   └── Exclude Item 4 | Level=4 Weight=9 Profit=12 Bound=12.00
+│   │   └── Exclude Item 3 | Level=3 Weight=5 Profit=7 Bound=13.00
+│   │       ├── Include Item 4 | Level=4 Weight=10 Profit=13 Bound=13.00
+│   │       └── Exclude Item 4 | Level=4 Weight=5 Profit=7 Bound=7.00 [PRUNED]
+│   └── Exclude Item 2 | Level=2 Weight=2 Profit=3 Bound=12.80 [PRUNED]
+└── Exclude Item 1 | Level=1 Weight=0 Profit=0 Bound=12.60 [PRUNED]
+
+Final Result
+------------
+Maximum Profit: 13
+Total Weight: 10
+Selected Items: [1, 2, 4]
+
+Pruning Rule:
+A node is pruned when its weight exceeds capacity or
+its upper bound is less than or equal to the current best profit.

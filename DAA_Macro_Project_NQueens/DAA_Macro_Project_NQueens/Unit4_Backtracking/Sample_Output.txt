@@ -1,0 +1,14 @@
+N-Queens Problem for N = 4
+Solution: [1, 3, 0, 2]
+
+Board:
+. Q . .
+. . . Q
+Q . . .
+. . Q .
+
+Here [1, 3, 0, 2] means:
+Row 1 -> Column 2
+Row 2 -> Column 4
+Row 3 -> Column 1
+Row 4 -> Column 3

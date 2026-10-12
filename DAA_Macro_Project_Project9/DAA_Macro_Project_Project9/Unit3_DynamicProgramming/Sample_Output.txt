@@ -1,0 +1,21 @@
+SAMPLE OUTPUT
+
+0/1 Knapsack using Dynamic Programming
+======================================
+Capacity: 10
+
+Items:
+Item 1 -> Weight: 2, Profit: 3
+Item 2 -> Weight: 3, Profit: 4
+Item 3 -> Weight: 4, Profit: 5
+Item 4 -> Weight: 5, Profit: 6
+
+Maximum Profit: 13
+
+Selected Items:
+Item 1 -> Weight: 2, Profit: 3
+Item 2 -> Weight: 3, Profit: 4
+Item 4 -> Weight: 5, Profit: 6
+
+Total selected weight = 10
+Total selected profit = 13

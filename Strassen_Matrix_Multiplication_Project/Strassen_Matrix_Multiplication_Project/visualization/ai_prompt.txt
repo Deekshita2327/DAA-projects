@@ -1,0 +1,13 @@
+AI Visualization Prompt
+
+Illustrate recursive division of matrices in Strassen’s algorithm.
+
+Create a professional educational block diagram showing:
+1. Original n×n matrices A and B.
+2. Division into A11, A12, A21, A22 and B11, B12, B21, B22.
+3. Seven recursive products P1 through P7 with their formulas.
+4. Combination formulas for C11, C12, C21 and C22.
+5. Final matrix C = A × B.
+6. A recursive flow diagram showing the base case n=1, division, seven recursive products, and combination.
+
+Use a clean academic design with dark navy/blue headers, white panels, and orange accents. Use clear arrows, readable mathematical notation, and concise labels. The visualization should be suitable for a B.Tech Design and Analysis of Algorithms project submission.

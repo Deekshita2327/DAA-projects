@@ -1,0 +1,43 @@
+ALGORITHM: 0/1 KNAPSACK USING BRANCH AND BOUND
+
+Input:
+    n items
+    weight[i] and profit[i] for each item
+    knapsack capacity W
+
+Output:
+    Maximum obtainable profit
+    Selected items
+    Branch-and-Bound tree with bounds and pruned nodes
+
+1. Sort items in decreasing order of profit/weight ratio.
+
+2. Create the root node:
+       level = 0
+       weight = 0
+       profit = 0
+       bound = calculateBound(root)
+
+3. For a node:
+       If weight > W:
+           prune the node.
+       Else if bound <= current best profit:
+           prune the node.
+       Else if all items have been considered:
+           update best profit if necessary.
+       Else:
+           Create two children:
+              a) Include the next item.
+              b) Exclude the next item.
+
+4. Calculate the bound of a node:
+       Start with the node's current profit.
+       Add complete remaining items while capacity permits.
+       If another item cannot fit completely, add a fractional
+       part of its profit to form an optimistic upper bound.
+
+5. Recursively process the include and exclude children.
+
+6. Continue until all promising nodes are processed.
+
+7. The current best profit is the optimal 0/1 Knapsack profit.
